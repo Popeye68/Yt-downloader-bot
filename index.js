@@ -60,7 +60,7 @@ async function downloadVideo(chatId, url) {
       clearInterval(updateInterval); // stop updating the message
       bot
         .sendVideo(chatId, `${title}-${chatId}.mp4`, {
-          caption: `*Video downloaded:* ${title} "by" @TsuyuOfficial 🏯`,
+          caption: `*Video downloaded:* ${title} "by" @Trackdownyou 🏯`,
           thumb: thumbnailUrl,
           duration: videoInfo.videoDetails.lengthSeconds,
           parse_mode: "Markdown",
@@ -98,8 +98,8 @@ bot.onText(/\/start/, (msg) => {
   // Send a message with the introduction and instructions
   bot.sendMessage(
     chatId,
-    `Hey, I am TsuyuDL made by @TsuyuOfficial. Use the following commands to use me! 
+    `Hey, this bot made by @Trackdownyou. Use the following commands to use me! 
 
-/yt - Give any youtube link and TsuyuDL will download it for you.`
+/yt - Give any youtube link and I will download it for you.`
   );
 });
